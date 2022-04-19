@@ -1,15 +1,89 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bambika</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="main.css">
 
-<body>
 
-</body>
+        <title>Bambika</title>
 
-</html>
+        <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-analytics.js"></script>
+
+        <script>
+            const firebaseConfig = {
+                apiKey: "AIzaSyCcxOqq_iTYp1M0vrXYBoz2CbbNSwnCuFI",
+                authDomain: "soundup-debf9.firebaseapp.com",
+                projectId: "soundup-debf9",
+                storageBucket: "soundup-debf9.appspot.com",
+                messagingSenderId: "676764102042",
+                appId: "1:676764102042:web:54e2e847e3d115e5e51e23",
+                measurementId: "G-TV54BGBZT5"
+            };
+            // Initialize Firebase 
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+            const database = getDatabase(app);
+        </script>
+
+    </head>
+
+    <body>
+
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="/" id="navbar__logo">BAMBIKA</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Songs</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="/" class="navbar__links">Comments</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="signup.html" class="button">SignUp</a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+        </nav>
+
+        <div class="main">
+            <div class="main__container">
+                <div class="main__content">
+                    <h1>BAMBIKA</h1>
+                    <h2>MUSIC</h2>
+                    <p>“One good thing about music, when it hits you, you feel no pain.”</p>
+
+                </div>
+                <div class="main__img--container">
+                    <img src="C:\Users\USER\Desktop\bambika\images\pic1.svg" alt="pic" id="main__img">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </body>
+
+
+
+
+
+    </html>
